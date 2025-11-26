@@ -1,11 +1,82 @@
-body {
-    background-color: rgb(4, 4, 52);
+*{
+    margin: 0;
+    padding: 0%;
+    border: 0%;
+    outline: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
 }
 
-main {
-    color: white;
+
+:root {
+ --bg-primary: #041643;
+ --color-primary: #1352f1;
+--color-white: #fff;
+--gay: #4e4e4e;
+--dark-gray: #696969;
+--light-gray: #afafaf;
 }
-footer {
-    color: white;
+
+
+body {
+    background-color: var(--bg-primary);
+    background-image: url(./img/gradient\ 2-03\ 1.svg);
+    background-repeat: no-repeat;
+    background-size: 1;
+    padding: 91px 123px;
+    height: 100vh ;
+    
 }
+
+.circulo {
+    margin-top: 100px;
+}
+
+h1 {
+    width: 21ch;
+    color: #fff;
+    margin-bottom: 23px;
+}
+
+p {
+ color: #afafaf;
+}
+
+
+form {
+    background-color: var(--color-white);
+    width: 343.33px;
+    padding: 50px 30px;
+}
+
+form label {
+    font-size: 8px;
+
+}
+
+.link {
+    font-size: 10px;
+    color: var(--gay);
+}
+
+
+
+.link  a {
+    font-weight: 600;
+    color: var(--gay);
+    
+}
+.button {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 10px 37px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+form input {
+    width: 100%;
+}
+
 
