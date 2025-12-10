@@ -1,47 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tela de Login
-    </title>
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tela de Login</title>
+  <link rel="stylesheet" href="./style.css">
+
+
 </head>
 <body>
-   <main>
-       
-       <img src="./img/Logo.svg">
-       
-       <div class="circulo">
-           <h1>Entre na sua conta</h1>
-           <p>Login</p>
+  <main>
+    <img src="./img/Logo.svg" alt="logo circles">
+    <section>
+      <div class="div-intro">
+      
+        <h1 style="color: white;">Faça login na sua conta</h1>
+        <p>Vamos aumentar o círculo!</p>
+      </div>
+      <form>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="name@example.com" required>
         </div>
         <div>
-            <form >
-            <div>
-                
-                <legend>Email</legend>
-                <label hidden ="Email">Email</label>
-                <input placeholder= "nome@gmail.com"email" required>
-            </div>
-            
-            <br> 
-            <div>
-                <legend>Senha</legend>
-                <label for=""></label>
-                <input placeholder="Senha"password">
-                <p class="link">Não tem conta? <a href="https" target="_blank">Casdrata-te</a> </p>
-
-                <button class="button" type="submit">Login</button>
-            </form>
+          <label for="">senha</label>
+          <input type="password" placeholder="your password" required>
         </div>
-        
-    </div>
-   </main> <br>
-   <div> 
-       <footer><p>© 2023 Circle. All Rights Reserved.</p></footer>
-       
-</div>
-
+        <div class="div-link-btn">
+          <p class="link-cadastro">Não tem uma conta? <a href="">Inscrever-se</a></p>
+          <button class="button" type="submit">Login</button>
+        </div>
+      </form> 
+    </section>
+  </main>
+  <footer>
+    <p>&copy;2023 Circle. All Rights Reserved.</p>
+  </footer>
 </body>
 </html>

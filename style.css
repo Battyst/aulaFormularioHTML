@@ -1,82 +1,137 @@
-*{
-    margin: 0;
-    padding: 0%;
-    border: 0%;
-    outline: 0%;
-    font-family: Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
-    text-decoration: none;
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Axiforma', sans-serif;
 }
 
+@font-face {
+  font-family: "Axiforma";
+  src: url(../assets/Axiforma.otf);
+}
 
+/* variaveis CSS */
 :root {
- --bg-primary: #041643;
- --color-primary: #1352f1;
---color-white: #fff;
---gay: #4e4e4e;
---dark-gray: #696969;
---light-gray: #afafaf;
-}
+  --bg-primary: #041643;
+  --color-primary: #1352F1;
+  --color-secondary: #1352f1d6;
+  --color-white: #fff;
 
+  /* gradiente cinza */
+  --gray: #4E4E4E;
+  --dark-gray: #696969; 
+  --light-gray: #AFAFAF;
+  --lighter-gray: #d7d7d7;
+}
 
 body {
-    background-color: var(--bg-primary);
-    background-image: url(./img/gradient\ 2-03\ 1.svg);
-    background-repeat: no-repeat;
-    background-size: 1;
-    padding: 91px 123px;
-    height: 100vh ;
-    
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--bg-primary);
+  background-image: url(./img/gradient\ 2-03\ 1.svg);
+  background-size: 105vh;
+  background-repeat: no-repeat;
+  padding: 91px 123px 30px;
+  height: 100vh; 
 }
 
-.circulo {
-    margin-top: 100px;
+section {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 100px;
 }
 
-h1 {
-    width: 21ch;
-    color: #fff;
-    margin-bottom: 23px;
+.div-intro {
+  flex: 1;
+  padding: 50px 30px;
+  width: 343.33px;
 }
 
-p {
- color: #afafaf;
+.div-intro > h1 {
+ 
+  width: 12ch; 
+  margin-bottom: 23px; 
 }
 
+.div-intro > p {
+  color: var(--light-gray);
+}
 
 form {
-    background-color: var(--color-white);
-    width: 343.33px;
-    padding: 50px 30px;
+  border-radius: 10px;
+  flex: 1;
+  background-color: var(--color-white);
+  max-width: 500px;
+  min-width: 500px;
+  padding: 50px 30px;
 }
 
-form label {
-    font-size: 8px;
-
-}
-
-.link {
-    font-size: 10px;
-    color: var(--gay);
-}
-
-
-
-.link  a {
-    font-weight: 600;
-    color: var(--gay);
-    
-}
-.button {
-    background-color: var(--color-primary);
-    color: var(--color-white);
-    padding: 10px 37px;
-    border-radius: 10px;
-    font-size: 14px;
+form label, form input {
+  font-size: 8px;
+  color: var(--dark-gray);
 }
 
 form input {
-    width: 100%;
+ 
+  width: 100%;
+  border: 1px solid var(--lighter-gray);
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 24px;
+}
+
+form input:focus {
+  border-color: var(--bg-primary);
 }
 
 
+form input::placeholder {
+  color: var(--lighter-gray);
+}
+
+.div-link-btn {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.link-cadastro {
+  font-size: 10px;
+  color: var(--gray);
+}
+
+.link-cadastro a {
+  font-weight: 600;
+  color: var(--gray);
+}
+
+.button {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: 10px 50px;
+  border-radius: 5px;
+  font-size: 9px;
+}
+
+.button:hover {
+  background-color: var(--bg-primary);
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+
+.button:active {
+  background-color: var(--color-primary);
+  transform: translateY(2px);
+}
+
+footer > p {
+  color: var(--color-white);
+  text-align: center;
+}
